@@ -31,8 +31,14 @@ licenseWhitelist += "LicenseRef-TQSSLA-1.0.2;";
 var child_process = require('child_process');
 
 function check() {
-    const cmd = `${__dirname}/../node_modules/license-checker/bin/license-checker --production --json --onlyAllow "${licenseWhitelist}"`;
+    var path = `${__dirname}/..`;
+    if (__dirname.includes("node_modules/tq-license-checker")) {
+        path = process.cwd();
+    }
+
+    const cmd = `${path}/node_modules/license-checker/bin/license-checker --production --json --onlyAllow "${licenseWhitelist}"`;
     console.info(`Calling: ${cmd}`);
+
     try {
         return child_process.execSync(cmd).toString();
     } catch (error) {

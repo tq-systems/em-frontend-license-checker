@@ -5,25 +5,12 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Run license check
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
+yarn license:check
 ```
 
 ### Lints and fixes files
 ```
-yarn run lint
+yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
