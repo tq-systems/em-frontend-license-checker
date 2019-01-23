@@ -4,6 +4,7 @@
   "private": true,
   "copyright": "TQ-Systems GmbH 2019",
   "license": "TQSSLA-1.0.2",
+  "main": "./src/index.js",
   "scripts": {
     "license:check": "bin/tq-license-checker.js",
     "lint": "vue-cli-service lint"
