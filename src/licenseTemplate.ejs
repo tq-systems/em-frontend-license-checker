@@ -1,0 +1,14 @@
+THIRD PARTY SOFTWARE NOTICES AND INFORMATION
+Do Not Translate or Localize
+
+<% dependencies.forEach(dep => { %>
+--------------------------------------------------------------------------------
+Package: <%= dep.name %>
+Version: <%= dep.version %>
+License: <%= dep.licenseName %>
+Author: <%= dep.author ? `${dep.author}` : '' %>
+URL: <%= dep.repository ? `${dep.repository}` : '' %>
+--------------------------------------------------------------------------------
+
+<%= dep.licenseText %>
+<% }) %>
