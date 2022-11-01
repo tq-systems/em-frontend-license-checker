@@ -10,15 +10,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "license-checker": "^20.2.0"
+    "license-checker": "^25.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.3.0",
-    "@vue/cli-plugin-eslint": "^3.3.0",
-    "@vue/cli-service": "^3.3.0",
-    "@vue/eslint-config-standard": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0"
+    "@babel/eslint-parser": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@vue/cli-plugin-babel": "^5.0.0",
+    "@vue/cli-plugin-eslint": "^5.0.0",
+    "@vue/cli-service": "^5.0.0",
+    "@vue/eslint-config-standard": "^8.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-vue": "^9.0.0"
   }
 }
