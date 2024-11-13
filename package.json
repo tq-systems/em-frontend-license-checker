@@ -1,5 +1,5 @@
 {
-  "name": "tq-license-checker",
+  "name": "@tq-em/tq-license-checker",
   "version": "0.2.4",
   "private": true,
   "copyright": "TQ-Systems GmbH 2019",
