@@ -1,6 +1,7 @@
 include:
 - project: tq-em/build/docker/toolchain-ci
   file: template-ci.yml
+  ref: v6.0.0_tc6.0.0
 
 deploy package to gitlab npm registry:
   stage: deploy
