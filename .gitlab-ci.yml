@@ -1,9 +1,14 @@
+include:
+- project: tq-em/build/docker/toolchain-ci
+  file: template-ci.yml
+  ref: v6.0.0_tc6.0.0
+
 deploy package to gitlab npm registry:
   stage: deploy
   only:
     - tags
   script:
     - echo 'Deploying...'
-    - echo "//vgitlab01.tq-net.de/api/v4/projects/1335/packages/npm/:_authToken=${CI_JOB_TOKEN}">.npmrc
+    - echo "//vgitlab02.tq-net.de/api/v4/projects/373/packages/npm/:_authToken=${CI_JOB_TOKEN}">.npmrc
     - yarn version --new-version $CI_COMMIT_TAG --no-git-tag-version
-    - yarn publish --registry https://vgitlab01.tq-net.de/api/v4/projects/1335/packages/npm/
+    - yarn publish --registry https://vgitlab02.tq-net.de/api/v4/projects/373/packages/npm/
